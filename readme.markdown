@@ -8,8 +8,17 @@ imply state and conditional view logic.
 
 BASIC USAGE
 -----------
+
+### jQuery
+
     $(document).ready(function() {
     	$.polypage.init();
+    });
+    
+### MooTools
+
+    window.addEvent('domready', function(){
+        var pp = new PolyPage();
     });
 
 
@@ -25,7 +34,13 @@ If you want to force a state to be active when the page
 loads then you can pass it in as an Array to the init 
 function like so...
 
+### jQuery
+
     $.polypage.init([ 'logged_in', 'admin' ]);
+    
+### MooTools
+
+    var pp = new PolyPage([ 'logged_in', 'admin' ]);
 
 MORE INFO
 ---------
