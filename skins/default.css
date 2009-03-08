@@ -1,17 +1,18 @@
 body div#pp_options {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: 0;
-	padding: 5px;
-	font-size: 12px;
-	line-height: 1;
+	left: 0;
+	padding: 4px;
 	background: #f0f0f0;
 	border-left: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
+	opacity: 0.85;
+	font-size: 11px;
+	line-height: 1em;
 }
 body div#pp_options p {
   display: inline;
-  color: #bbb;  
+  color: #aaa;  
 }
 body div#pp_options ul {
   display: inline;
@@ -20,11 +21,12 @@ body div#pp_options ul {
 }
 body div#pp_options li {
 	display: inline;
-	padding: 0 .3em;
+	padding: 0 9px;
 }
 body div#pp_options li a {
 	color: #999;
 }
 body div#pp_options li a.active {
 	color: #000;
+	background: #d4fb78;
 }
